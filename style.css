@@ -1,0 +1,114 @@
+/* google font  */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+:root {
+  --clr-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --clr-Soft-red: hsl(14, 88%, 65%);
+  /* Background gradient: */
+  --clr-soft-violet: hsl(273, 75%, 66%);
+  --clr-Soft-blue: hsl(240, 73%, 65%);
+  /* #### Text */
+
+  --clr-Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  /*  #### Dividers */
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+/* project code */
+body {
+  background: rgb(175, 103, 233);
+  background: linear-gradient(
+    rgba(175, 103, 233, 1) 0%,
+    rgba(101, 101, 231, 1) 100%
+  );
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+}
+.container {
+  width: 920px;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 90px;
+  background-color: var(--Light-grayish-blue);
+  border-radius: 20px;
+  display: flex;
+}
+.image-container{
+  width: 50%;
+}
+.image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.image .image-1{
+  height: 320px;
+  position: absolute;
+  top: 70px; 
+  left: -70px; 
+}
+ .image-2 {
+   position: relative;
+   height: 120px;
+   top: -230px;
+   left: -70px;
+}
+.image .image-3 {
+  position: absolute;
+  width: 600px;
+  bottom: -50px;
+  left: -230px;
+
+
+}
+.questions {
+  width: 55%;
+  padding: 40px 80px 20px 40px;
+  position: relative;
+}
+.question {
+  margin-top: -10px;
+  border-bottom: 0.5px solid var(--dark-grayish-blue);
+}
+
+.question-text {
+  margin-top: -10px;
+  display: none;
+
+}
+h1 {
+  font-family: 'Kumbh-Sans',sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h5 {
+  font-family: 'Kumbh-Sans',sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--clr-Very-dark-grayish-blue);
+}
+.arrow {
+  position: absolute;
+  right: 150px;
+  height: 9px;
+  
+}
+.arrow:hover {
+  transform: rotate(180deg);
+  transition: linear 18s ease-out;
+  cursor: pointer;
+}
+p {
+  padding-right: 30px;
+}
+.show-text .question-text {
+  display: block;
+
+}
+

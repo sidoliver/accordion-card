@@ -1,40 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./images/favicon-32x32.png"
+      />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+      <title>Frontend Mentor | FAQ Accordion Card</title>
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css" />
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+        .attribution {
+          font-size: 11px;
+          text-align: center;
+        }
+        .attribution a {
+          color: hsl(228, 45%, 44%);
+        }
+      </style>
+    </head>
+    <body>
+      <section class="container">
+        <div class="image-container">
+          <div class="image">
+            <img class="image-1" src="images/illustration-woman-online-desktop.svg" alt="illustration-woman-online-desktop">
+            <img class="image-3" src="images/bg-pattern-desktop.svg" alt="bg-pattern-desktop"> 
+          </div>  
+          <!-- <div class="images"></div> -->
+          <img class="image-2" src="images/illustration-box-desktop.svg" alt="illustration-box">
+          </div>
+        <!-- image container end -->
+        <div class="questions">
+          <!-- title -->
+          <div class="title">
+            <h1>faq</h1>
+          </div>
+          <!-- questions -->
+          <div class="section-center">
+            <!-- single question -->
+            <article class="question">
+              <!-- question title -->
+              <div class="question-title">
+                <h5>How many team members can I invite? <span><img class="arrow" src="images/icon-arrow-down.svg" alt="icon"></span></h5>
+              </div>
+              <!-- question text -->
+              <div class="question-text">
+                <p>
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on 
+                  team members for the Premium plan.
+                </p>
+              </div>
+            </article>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+            <article class="question">
+              <!-- question title -->
+              <div class="question-title">
+                <h5>
+                  What is the maximum file upload size? <span><img class="arrow" src="images/icon-arrow-down.svg" alt="icon"></span></h5>
+              </div>
+              <!-- question text -->
+              <div class="question-text">
+                <p>
+                  No more than 2GB. All files in your account must 
+                  fit your allotted storage space.
+                </p>
+              </div>
+            </article>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+            <article class="question">
+              <!-- question title -->
+              <div class="question-title">
+                <h5> How do I reset my password? <span><img class="arrow" src="images/icon-arrow-down.svg" alt="icon"></span></h5>
+              </div>
+              <!-- question text -->
+              <div class="question-text">
+                <p>
+                  Click “Forgot password” from the login page or “Change password” 
+                  from your profile page.
+    A reset link will be emailed to you.
+                </p>
+              </div>
+            </article>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            <article class="question">
+              <!-- question title -->
+              <div class="question-title">
+                <h5> Can I cancel my subscription? <span><img class="arrow" src="images/icon-arrow-down.svg" alt="icon"></span></h5>
+              </div>
+              <!-- question text -->
+              <div class="question-text">
+                <p>
+                  Yes! Send us a message and we’ll process your request no questions asked.
+                </p>
+              </div>
+            </article>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+            <article class="question">
+              <!-- question title -->
+              <div class="question-title">
+                <h5> 
+                  Do you provide additional support? <span><img class="arrow" src="images/icon-arrow-down.svg" alt="icon"></span></h5>
+              </div>
+              <!-- question text -->
+              <div class="question-text">
+                <p>
+                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </p>
+              </div>
+            </article>
+          </div>
+      </section>
+
+      <!-- 
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>  -->
+    <script src="app.js"></script>
+    </body>
+  </html>
