@@ -35,6 +35,9 @@ body {
   background-color: var(--Light-grayish-blue);
   border-radius: 20px;
   display: flex;
+  box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.63);
+-webkit-box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.63);
+-moz-box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.63);
 }
 .image-mobile {
   display: none;
@@ -120,8 +123,13 @@ p {
   display: block;
 
 }
+/* 
+========================
+responsive design 
+========================
+*/
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
  .body {
   background: rgb(175, 103, 233);
   background: linear-gradient(
@@ -134,7 +142,7 @@ p {
   .container {
     
      width: 80vw;  
-     height: 900px;
+     height: 480px;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -142,6 +150,7 @@ p {
      /* overflow:visible; */
      margin-top: 170px;
      padding: 0 20px 20px;
+    
   }
  .image-container {
   display:none;
@@ -150,10 +159,11 @@ p {
 .image-mobile {
   display: block;
   width: 400px;
-  height: 2px;
-  background-color: rgba(255, 0, 0, 0.11);
   overflow: visible;
   position:relative;
+  top: 100px;
+  
+  text-align: center;
 }
 .image-mobile .image-1 {
    height: 200px;
@@ -175,6 +185,7 @@ p {
   position: relative;
   margin-left: 100px;
   margin-right: 40px;
+  margin-top: -40px;
 }
 .question {
   /* margin-top: 0px; */
@@ -196,5 +207,9 @@ p {
   transform: rotate(180deg);
   transition: linear 18s ease-out;
   cursor: pointer;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 60px;
 }
 }
