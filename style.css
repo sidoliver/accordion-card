@@ -36,6 +36,9 @@ body {
   border-radius: 20px;
   display: flex;
 }
+.image-mobile {
+  display: none;
+}
 .image-container{
   width: 50%;
 }
@@ -71,10 +74,11 @@ body {
   width: 55%;
   padding: 40px 80px 20px 40px;
   position: relative;
+  max-height: 500px;
 }
 .question {
   margin-top: -10px;
-  border-bottom: 0.5px solid var(--dark-grayish-blue);
+  border-bottom: 0.1px solid var(--dark-grayish-blue);
 }
 
 .question-text {
@@ -89,9 +93,12 @@ h1 {
 }
 h5 {
   font-family: 'Kumbh-Sans',sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: var(--clr-Very-dark-grayish-blue);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--clr-dark-grayish-blue);
+}
+h5:hover {
+  color:var(--clr-Soft-red);
 }
 .arrow {
   position: absolute;
@@ -106,9 +113,88 @@ h5 {
 }
 p {
   padding-right: 30px;
+  font-family: 'Kumbh-Sans',sans-serif;
+  color: var(--clr-Very-dark-grayish-blue);
 }
 .show-text .question-text {
   display: block;
 
 }
 
+@media only screen and (max-width: 1000px) {
+ .body {
+  background: rgb(175, 103, 233);
+  background: linear-gradient(
+    rgba(175, 103, 233, 1) 0%,
+    rgba(101, 101, 231, 1) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+ }
+  .container {
+    
+     width: 80vw;  
+     height: 900px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     /* overflow:visible; */
+     margin-top: 170px;
+     padding: 0 20px 20px;
+  }
+ .image-container {
+  display:none;
+}
+
+.image-mobile {
+  display: block;
+  width: 400px;
+  height: 2px;
+  background-color: rgba(255, 0, 0, 0.11);
+  overflow: visible;
+  position:relative;
+}
+.image-mobile .image-1 {
+   height: 200px;
+   position:absolute;
+   top: -300px;
+   left: 80px;
+}
+.image-mobile .image-3 {
+  position:absolute;
+  top: -190px;
+  left: 100px;
+
+}
+/* .section-center {
+  
+} */
+.questions {
+  width: 100%;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 40px;
+}
+.question {
+  /* margin-top: 0px; */
+  border-bottom: 0.5px solid var(--dark-grayish-blue);
+}
+
+.question-text {
+  margin-top: -10px;
+  display: none;
+
+}
+.arrow {
+  position: absolute;
+  right: 100px;
+  height: 9px;
+  
+}
+.arrow:hover {
+  transform: rotate(180deg);
+  transition: linear 18s ease-out;
+  cursor: pointer;
+}
+}
