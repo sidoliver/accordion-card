@@ -58,7 +58,7 @@ Users should be able to:
  * Hide a pertion of an Image beind a div.
  * How to toggle a class using javascript.
  * Javascript forEach loop.
- ###### This was a very challenging project indeed. I struggled to  position the images in a certain order. It took me 26 hours to build this project but It is still half cooked. There are some major issues in my design pattern. I am reading blogs to findout the best possible way to solve my problems more efficiently. Those are: 
+ ### This was a very challenging project indeed. I struggled to  position the images in a certain order. It took me 26 hours to build this project but It is still half cooked. There are some major issues in my design pattern. I am reading blogs to findout the best possible way to solve my problems more efficiently. Those are: 
   * selecting the best font size suffix(px, rem, em , vh, %)
   * effective use of display properties.
   * clear idea of margin and padding
