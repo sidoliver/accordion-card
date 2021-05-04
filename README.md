@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile view](images/bg-pattern-mobile.svg)
+![mobile view]()
 
 
 ### Links
